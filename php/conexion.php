@@ -4,7 +4,7 @@
 			$usuario='root';
 			$password='';
 			$host='localhost';
-			$db='ejemplo';
+			$db='encritado';
 
 			return $conexion = new PDO("mysql:host=$host;dbname=$db",$usuario, $password);
 		}
