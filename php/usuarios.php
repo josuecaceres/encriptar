@@ -28,7 +28,7 @@
     $model=new CRUD;
     $model->tablaN = "`usuarios`";
     $model->Columns = "`nombre`, `correo`, `password`, `cargo`";
-    $model->Values = "'".sha1($nombre)."','".sha1($correo)."','".sha1($contraseña)."','".sha1($cargo)."'";
+    $model->Values = "'".$nombre."','".$correo."','".$contraseña."','".$cargo."'";
     $model->Crear();
     $mensaje=$model->mensaje;
   
